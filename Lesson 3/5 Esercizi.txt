@@ -1,0 +1,208 @@
+15. Esercizio "Implementa una funzione ricorsiva per calcolare il numero di Fibonacci":
+
+#include <stdio.h>
+
+int fibonacci(int num) {
+    if (num <= 1) {
+        return num;
+    } else {
+        return fibonacci(num - 1) + fibonacci(num - 2);
+    }
+}
+
+int main() {
+    int num;
+
+    printf("Inserisci un numero: ");
+    scanf("%d", &num);
+
+    printf("Il numero di Fibonacci corrispondente a %d è: %d", num, fibonacci(num));
+
+    return 0;
+}
+
+
+16. Esercizio "Implementa una funzione per convertire un numero decimale in binario":
+
+#include <stdio.h>
+
+void decToBin(int num) {
+    int bin[32], i;
+
+    for (i = 0; num > 0; i++) {
+        bin[i] = num % 2;
+        num /= 2;
+    }
+
+    printf("Il numero binario corrispondente è: ");
+    for (i = i - 1; i >= 0; i--) {
+        printf("%d", bin[i]);
+    }
+}
+
+int main() {
+    int num;
+
+    printf("Inserisci un numero decimale: ");
+    scanf("%d", &num);
+
+    decToBin(num);
+
+    return 0;
+}
+
+17. Esercizio "Implementa una funzione per calcolare l'MCD di due numeri":
+
+#include <stdio.h>
+
+int mcd(int a, int b) {
+    int mcd;
+
+    while (a != b) {
+        if (a > b) {
+            a -= b;
+        } else {
+            b -= a;
+        }
+    }
+
+    mcd = a;
+
+    return mcd;
+}
+
+int main() {
+    int a, b;
+
+    printf("Inserisci il primo numero: ");
+    scanf("%d", &a);
+
+    printf("Inserisci il secondo numero: ");
+    scanf("%d", &b);
+
+    printf("L'MCD di %d e %d è: %d", a, b, mcd(a, b));
+
+    return 0;
+}
+
+
+18. Esercizio "Implementa una funzione per calcolare l'MCM di due numeri":
+
+#include <stdio.h>
+
+int mcd(int a, int b) {
+    int mcd;
+
+    while (a != b) {
+        if (a > b) {
+            a -= b;
+        } else {
+            b -= a;
+        }
+    }
+
+    mcd = a;
+
+    return mcd;
+}
+
+int mcm(int a, int b) {
+    int mcm;
+
+    mcm = (a * b) / mcd(a, b);
+
+    return mcm;
+}
+
+int main() {
+    int a, b;
+
+    printf("Inserisci il primo numero: ");
+    scanf("%d", &a);
+
+    printf("Inserisci il secondo numero: ");
+    scanf("%d", &b);
+
+    printf("L'MCM di %d e %d è: %d", a, b, mcm(a, b));
+
+    return 0;
+}
+
+
+
+19. Esercizio "Implementa una funzione per calcolare la somma di due matrici":
+
+#include <stdio.h>
+
+void addMatrix(int mat1[][3], int mat2[][3], int result[][3]) {
+    int i, j;
+
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            result[i][j] = mat1[i][j] + mat2[i][j];
+        }
+    }
+}
+
+int main() {
+    int mat1[3][3], mat2[3][3], result[3][3], i, j;
+
+    printf("Inserisci gli elementi della prima matrice:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            scanf("%d", &mat1[i][j]);
+        }
+    }
+
+    printf("Inserisci gli elementi della seconda matrice:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            scanf("%d", &mat2[i][j]);
+        }
+    }
+
+    addMatrix(mat1, mat2, result);
+
+    printf("La somma delle due matrici è:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("%d ", result[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+
+20. Esercizio "Implementa una funzione per trovare il massimo valore in un array":
+
+#include <stdio.h>
+
+int findMax(int arr[], int n) {
+    int i, max = arr[0];
+
+    for (i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    return max;
+}
+
+int main() {
+    int arr[10], i, max;
+
+    printf("Inserisci 10 numeri:\n");
+    for (i = 0; i < 10; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    max = findMax(arr, 10);
+
+    printf("Il massimo valore nell'array è: %d", max);
+
+    return 0;
+}

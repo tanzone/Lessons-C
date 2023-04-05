@@ -1,0 +1,117 @@
+11. Esercizio "Calcola la somma degli elementi di un array":
+
+#include <stdio.h>
+
+int sumArray(int arr[], int size) {
+    int i, sum = 0;
+
+    for (i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+
+    return sum;
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    printf("La somma degli elementi dell'array è: %d", sumArray(arr, size));
+
+    return 0;
+}
+
+
+
+12. Esercizio "Ordina un array di numeri in ordine crescente":
+
+#include <stdio.h>
+
+void sortArray(int arr[], int size) {
+    int i, j, temp;
+
+    for (i = 0; i < size - 1; i++) {
+        for (j = i + 1; j < size; j++) {
+            if (arr[i] > arr[j]) {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+}
+
+int main() {
+    int arr[] = {5, 3, 1, 4, 2};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int i;
+
+    printf("Array prima dell'ordinamento: ");
+    for (i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    sortArray(arr, size);
+
+    printf("\nArray dopo l'ordinamento: ");
+    for (i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+
+
+
+13. Esercizio "Calcola il fattoriale di un numero":
+
+#include <stdio.h>
+
+int factorial(int num) {
+    int i, result = 1;
+
+    for (i = 1; i <= num; i++) {
+        result *= i;
+    }
+
+    return result;
+}
+
+int main() {
+    int num;
+
+    printf("Inserisci un numero: ");
+    scanf("%d", &num);
+
+    printf("Il fattoriale di %d è: %d", num, factorial(num));
+
+    return 0;
+}
+
+
+
+14. Esercizio "Calcola la potenza di un numero":
+
+#include <stdio.h>
+#include <math.h>
+
+double power(double base, int exponent) {
+    return pow(base, exponent);
+}
+
+int main() {
+    double base, result;
+    int exponent;
+
+    printf("Inserisci la base: ");
+    scanf("%lf", &base);
+
+    printf("Inserisci l'esponente: ");
+    scanf("%d", &exponent);
+
+    result = power(base, exponent);
+
+    printf("%.2lf elevato alla %d è: %.2lf", base, exponent, result);
+
+    return 0;
+}
