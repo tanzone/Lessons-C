@@ -11,3 +11,5 @@ In questo repository sono presenti alcuni esercizi di programmazione in C. Ogni 
 13. `fattoriale.c`: Calcola il fattoriale di un numero
 
 14. `potenza.c`: Calcola la potenza di un numero
+
+15. `fibonacci.c`: Implementa una funzione ricorsiva per calcolare il numero di Fibonacci
