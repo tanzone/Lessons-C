@@ -166,4 +166,4 @@ Le matrici possono essere utilizzate per rappresentare matrici bidimensionali, c
 int grafo[5][5] = {{0, 1, 0, 0, 1}, {1, 0, 1, 1, 0}, {0, 1, 0, 1, 0}, {0, 1, 1, 0, 1}, {1, 0, 0, 1, 0}};
 ```
 In questo caso, un valore 1 nella cella i,j indica che c'è un arco che va dal nodo i al nodo j, mentre un valore 0 indica che non c'è un arco.
-------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------ 
