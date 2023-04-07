@@ -12,10 +12,4 @@ In questo repository sono presenti alcuni esercizi di programmazione in C. Ogni 
 
 34. `piramide.c`: Scrivi un programma in C che chiede all'utente di inserire un intero positivo n e poi stampa una figura geometrica composta da n righe. Ogni riga ha un certo numero di asterischi, che aumenta di 2 ad ogni riga. La figura dovrebbe assomigliare a una piramide.
 
-n = 5
-    *
-   ***
-  *****
- *******
-*********
-35. `quadrato.c`: Scrivi un programma in C che chiede all'utente di inserire un intero positivo n e poi stampa una figura geometrica a forma di quadrato composto da n righe e n colonne. Ogni cella del quadrato deve contenere un asterisco.
+35. `quadrato.c`: Scrivi un programma in C che chiede all'utente di inserire un intero positivo n e poi stampa una figura geometrica a forma di quadrato composto da n righe e n colonne. Ogni cella del quadrato deve contenere un asterisco. 

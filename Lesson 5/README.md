@@ -22,4 +22,4 @@ Output: "La lettera 'a' compare 2 volte nella stringa"
 Esempio di input/output:
 
 Input: 7 5 12 0
-Output: "Valore massimo: 12, valore minimo: 5, media: 8.0"
+Output: "Valore massimo: 12, valore minimo: 5, media: 8.0" 
