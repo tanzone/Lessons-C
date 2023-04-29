@@ -29,7 +29,6 @@ Una delle caratteristiche principali di C è la sua forte tipizzazione: ogni var
 Per poter lavorare con le variabili in C, è possibile utilizzare dei format specifier. I format specifier sono dei caratteri che consentono di specificare il tipo di dato che si sta utilizzando. Ad esempio, %d viene utilizzato per gli interi, %f per i numeri floating point e %c per i caratteri. Quando si utilizza una funzione di input/output come printf o scanf, è necessario utilizzare il corretto format specifier per ogni variabile.
 
 Ecco alcuni esempi di utilizzo dei format specifier in C:
-------------------------------------------------------------------------------------------------
 ```c
 int num = 10;
 float f = 3.14;
@@ -38,12 +37,12 @@ printf("Il valore di num è: %d\n", num); // output: Il valore di num è: 10
 printf("Il valore di f è: %f\n", f); // output: Il valore di f è: 3.140000
 printf("Il valore di c è: %c\n", c); // output: Il valore di c è: A
 ```
-------------------------------------------------------------------------------------------------
+
 C supporta anche le stringhe di caratteri, che vengono gestite come un array di caratteri. Per definire una stringa in C, è possibile utilizzare la sintassi seguente:
-------------------------------------------------------------------------------------------------
 ```c
 char stringa[] = "Questa è una stringa";
 ```
+
 ------------------------------------------------------------------------------------------------
 Per manipolare le stringhe in C, esistono delle funzioni apposite come strlen per calcolare la lunghezza della stringa, strcpy per copiare una stringa in un'altra, e strcat per concatenare due stringhe.
 Ecco alcuni esempi di utilizzo delle funzioni per le stringhe in C:
