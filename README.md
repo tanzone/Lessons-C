@@ -1,3 +1,29 @@
+# Tipi di variabili in C
+C è un linguaggio di programmazione di basso livello utilizzato per lo sviluppo di applicazioni di sistema, driver, sistemi operativi e altri programmi a basso livello. Una variabile in C è un'entità che rappresenta un valore che può essere modificato durante l'esecuzione del programma.
+
+In C, i tipi di variabili includono:
+
+1. Intero (int): l'intero è un tipo di variabile che rappresenta numeri interi. La dimensione di un intero in C dipende dall'architettura della macchina. In genere, l'intero è di 2 o 4 byte. Esempio: int x = 10;
+
+2. Carattere (char): il carattere è un tipo di variabile che rappresenta un singolo carattere. Il carattere può essere rappresentato da un valore numerico ASCII. Esempio: char c = 'a';
+
+3. Punto in virgola mobile (float): il punto in virgola mobile è un tipo di variabile che rappresenta numeri in virgola mobile. La dimensione di un punto in virgola mobile in C è di 4 byte. Esempio: float f = 3.14;
+
+4. Doppio punto in virgola mobile (double): il doppio punto in virgola mobile è un tipo di variabile che rappresenta numeri in virgola mobile con una maggiore precisione rispetto al tipo float. La dimensione di un doppio punto in virgola mobile in C è di 8 byte. Esempio: double d = 3.14159265359;
+
+5. Breve (short): il breve è un tipo di variabile che rappresenta numeri interi a 16 bit. Esempio: short s = 32767;
+
+6. Lungo (long): il lungo è un tipo di variabile che rappresenta numeri interi a 32 bit. Esempio: long l = 2147483647L;
+
+7. Lungo doppio (long double): il lungo doppio è un tipo di variabile che rappresenta numeri in virgola mobile con una maggiore precisione rispetto al tipo double. La dimensione di un lungo doppio in virgola mobile in C dipende dall'architettura della macchina. Esempio: long double ld = 3.14159265358979323846L;
+
+8. Puntatore (pointer): il puntatore è un tipo di variabile che rappresenta l'indirizzo di memoria di un'altra variabile. Esempio: int *p = &x;
+
+9. Vettore (array): il vettore è un tipo di variabile che rappresenta una sequenza di elementi dello stesso tipo. La dimensione del vettore deve essere specificata durante la dichiarazione. Esempio: int arr[5] = {1, 2, 3, 4, 5};
+
+10. Struttura (struct): la struttura è un tipo di variabile che rappresenta una collezione di element
+------------------------------------------------------------------------------------------------
+
 Una delle caratteristiche principali di C è la sua forte tipizzazione: ogni variabile ha un tipo specifico, come ad esempio int (intero) o float (floating point), e la tipologia della variabile deve essere definita prima dell'utilizzo. Ciò significa che in C non è possibile assegnare un valore di un tipo a una variabile di un altro tipo.
 
 Per poter lavorare con le variabili in C, è possibile utilizzare dei format specifier. I format specifier sono dei caratteri che consentono di specificare il tipo di dato che si sta utilizzando. Ad esempio, %d viene utilizzato per gli interi, %f per i numeri floating point e %c per i caratteri. Quando si utilizza una funzione di input/output come printf o scanf, è necessario utilizzare il corretto format specifier per ogni variabile.
