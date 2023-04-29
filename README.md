@@ -39,14 +39,12 @@ printf("Il valore di f è: %f\n", f); // output: Il valore di f è: 3.140000
 printf("Il valore di c è: %c\n", c); // output: Il valore di c è: A
 ```
 ------------------------------------------------------------------------------------------------
-
 C supporta anche le stringhe di caratteri, che vengono gestite come un array di caratteri. Per definire una stringa in C, è possibile utilizzare la sintassi seguente:
 ------------------------------------------------------------------------------------------------
 ```c
 char stringa[] = "Questa è una stringa";
 ```
 ------------------------------------------------------------------------------------------------
-
 Per manipolare le stringhe in C, esistono delle funzioni apposite come strlen per calcolare la lunghezza della stringa, strcpy per copiare una stringa in un'altra, e strcat per concatenare due stringhe.
 Ecco alcuni esempi di utilizzo delle funzioni per le stringhe in C:
 ------------------------------------------------------------------------------------------------
